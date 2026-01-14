@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Steel Grey theme - Light mode */
+    --background: 210 20% 98%;
+    --foreground: 215 25% 15%;
+    
+    --card: 210 20% 95%;
+    --card-foreground: 215 25% 15%;
+    
+    --popover: 210 20% 97%;
+    --popover-foreground: 215 25% 15%;
+    
+    --primary: 215 20% 45%;
+    --primary-foreground: 210 20% 98%;
+    
+    --secondary: 200 15% 55%;
+    --secondary-foreground: 210 20% 98%;
+    
+    --muted: 210 15% 90%;
+    --muted-foreground: 215 15% 45%;
+    
+    --accent: 200 25% 60%;
+    --accent-foreground: 210 20% 98%;
+    
+    --destructive: 0 75% 55%;
+    --destructive-foreground: 210 20% 98%;
+    
+    --border: 210 15% 85%;
+    --input: 210 15% 90%;
+    --ring: 215 20% 45%;
+    
+    --radius: 0.5rem;
+    
+    --e10-color: 215 20% 45%;
+    --e20-color: 160 45% 45%;
+    --pure-color: 200 60% 50%;
+    --diesel-color: 25 60% 45%;
+    --cng-color: 180 50% 45%;
+    --ev-color: 250 45% 55%;
+    
+    --gradient-fuel: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--secondary)) 100%);
+    --gradient-map: linear-gradient(180deg, hsl(var(--background)) 0%, hsl(210 20% 92%) 100%);
+    
+    --shadow-glow: 0 0 30px hsl(var(--primary) / 0.2);
+    --shadow-intense: 0 10px 40px -10px hsl(var(--primary) / 0.3);
+
+    --sidebar-background: 210 20% 95%;
+    --sidebar-foreground: 215 25% 15%;
+    --sidebar-primary: 215 20% 45%;
+    --sidebar-primary-foreground: 210 20% 98%;
+    --sidebar-accent: 210 15% 90%;
+    --sidebar-accent-foreground: 215 25% 15%;
+    --sidebar-border: 210 15% 85%;
+    --sidebar-ring: 215 20% 45%;
+  }
+
+  .dark {
+    /* Steel Grey theme - Dark mode */
+    --background: 220 20% 10%;
+    --foreground: 210 20% 95%;
+    
+    --card: 220 18% 14%;
+    --card-foreground: 210 20% 95%;
+    
+    --popover: 220 18% 12%;
+    --popover-foreground: 210 20% 95%;
+    
+    --primary: 210 15% 60%;
+    --primary-foreground: 220 20% 10%;
+    
+    --secondary: 200 20% 50%;
+    --secondary-foreground: 220 20% 10%;
+    
+    --muted: 220 15% 22%;
+    --muted-foreground: 210 15% 65%;
+    
+    --accent: 200 25% 55%;
+    --accent-foreground: 210 20% 95%;
+    
+    --destructive: 0 70% 55%;
+    --destructive-foreground: 210 20% 95%;
+    
+    --border: 220 15% 28%;
+    --input: 220 15% 22%;
+    --ring: 210 15% 60%;
+    
+    --e10-color: 210 15% 60%;
+    --e20-color: 160 40% 50%;
+    --pure-color: 200 55% 55%;
+    --diesel-color: 25 55% 50%;
+    --cng-color: 180 45% 50%;
+    --ev-color: 250 40% 60%;
+    
+    --gradient-fuel: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--secondary)) 100%);
+    --gradient-map: linear-gradient(180deg, hsl(var(--background)) 0%, hsl(220 18% 14%) 100%);
+    
+    --shadow-glow: 0 0 30px hsl(var(--primary) / 0.25);
+    --shadow-intense: 0 10px 40px -10px hsl(var(--primary) / 0.4);
+
+    --sidebar-background: 220 18% 12%;
+    --sidebar-foreground: 210 20% 95%;
+    --sidebar-primary: 210 15% 60%;
+    --sidebar-primary-foreground: 220 20% 10%;
+    --sidebar-accent: 220 15% 18%;
+    --sidebar-accent-foreground: 210 20% 95%;
+    --sidebar-border: 220 15% 28%;
+    --sidebar-ring: 210 15% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Rajdhani', sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+}
+
+@layer utilities {
+  .text-fuel-glow {
+    text-shadow: 0 0 20px hsl(var(--primary) / 0.6);
+  }
+  
+  .border-fuel-glow {
+    box-shadow: 0 0 15px hsl(var(--primary) / 0.4), inset 0 0 15px hsl(var(--primary) / 0.1);
+  }
+}

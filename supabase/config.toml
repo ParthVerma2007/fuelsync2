@@ -1,0 +1,4 @@
+project_id = "dhxmujdfmxwqmjunrapf"
+
+[functions.dve-process]
+verify_jwt = false
