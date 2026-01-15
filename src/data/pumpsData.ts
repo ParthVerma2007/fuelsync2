@@ -1,4 +1,4 @@
-export interface PumpData {
+lexport interface PumpData {
   id: number;
   name: string;
   address: string;
@@ -49,7 +49,7 @@ export const pumpsData: PumpData[] = [
   },
   {
     id: 3,
-    name: "Raghunanand",
+    name: "Raghunanand Petroleum",
     address: "TATHAWADENIMBALKAR NAGAR, BRT Link Road, Pune, Maharashtra 411033",
     e20: true,
     e10: true,
@@ -94,7 +94,7 @@ export const pumpsData: PumpData[] = [
   },
   {
     id: 6,
-    name: "Koeshwar Petroleum",
+    name: "Koteshwar Petroleum",
     address: "JQ8R+X5F, Main Road, Adarsh Nagar, Kalewadi, Pimpri-Chinchwad, Maharashtra 411017",
     e20: true,
     e10: true,
